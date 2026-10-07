@@ -1,0 +1,136 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shopify_breadcrumbs_AdcyXN": {
+      "type": "shopify-breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_enabled": true,
+        "breadcrumbs_menu_definition": "main-menu",
+        "prefer_shortest_path": false,
+        "separator_shape": "triangle",
+        "font_size": 14,
+        "color_scheme": "",
+        "enable_divider": false,
+        "divider_color": "#ccc",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "image_banner_6weFwp": {
+      "type": "image-banner",
+      "blocks": {
+        "text_rGzmzw": {
+          "type": "text",
+          "settings": {
+            "text": "Weightless & elegant — the quintessential fabric for formal occasions and everyday grace.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_rGzmzw"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Hijab_for_every_aspect_of_life.png",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "seo-chiffon": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_chiffon": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Complete Chiffon Hijab Guide",
+            "heading_size": "h2"
+          }
+        },
+        "text_chiffon": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>What Makes Chiffon Hijabs Special?</h2><p><strong>Chiffon hijabs</strong> are woven from ultra-fine threads in a plain weave that creates the fabric's signature airy drape and subtle sheen. The slightly textured surface grips itself naturally — fewer pins, less fussing, your style stays put from morning to evening. Each hijab is finished to resist fraying and retain its drape through regular washing.</p><h2>How to Style a Chiffon Hijab</h2><ul><li><strong>Simple shoulder drape</strong> — Centre the hijab on your head and bring one side forward over the shoulder. The fabric's natural grip holds without pinning.</li><li><strong>Turkish wrap</strong> — Tuck under the chin and layer around; chiffon holds structure without the bulk of heavier fabrics.</li><li><strong>Voluminous formal look</strong> — Layer over itself for a full, cloud-like drape that still feels weightless because of the fabric's low weight.</li></ul><p>For all-day security, pair with our <a href=\"/products/cotton-jersey-undercap-tie-back-hijab-caps\">cotton jersey undercap</a> to prevent slipping. Add our <a href=\"/products/strong-hold-everyday-essential-hijab-magnet-set-metallic\">hijab magnets</a> for a pin-free close that won't damage delicate chiffon.</p><h2>Chiffon vs Modal — Which Fabric Is Right for You?</h2><p>Both are bestsellers for good reason, but they suit different moments. Chiffon hijabs offer a lighter, airier drape with a subtle luminosity — perfect for weddings, formal events, Eid, and warmer weather. Our <a href=\"/collections/modal-hijabs\">modal hijabs</a> are denser, softer against the skin, and more opaque — the better everyday choice, especially in cooler seasons. Most customers reach for both depending on the occasion.</p><h2>Chiffon Hijab Care Guide</h2><p>For the full step-by-step, see our <a href=\"/blogs/hijab-guide/how-to-wash-care-chiffon-hijab\">chiffon hijab care guide</a>. The key points are below:</p><ul><li><strong>Washing</strong> — Hand wash in cool water, or machine wash on a gentle cycle inside a mesh laundry bag to protect the weave from snagging.</li><li><strong>Detergent</strong> — Use a mild, colour-safe liquid detergent. Avoid bleach, fabric softeners, or enzyme formulas — they break down fine fibres over time.</li><li><strong>Drying</strong> — Never tumble dry. Lay flat on a clean towel or hang to air dry away from direct sunlight, which can fade colour over time.</li><li><strong>Ironing</strong> — Lowest heat setting on the reverse side, with a thin pressing cloth between iron and fabric. A garment steamer is even safer and removes creases quickly.</li><li><strong>Storage</strong> — Fold loosely or roll. Avoid compressing under heavy items as chiffon is slow to release deep set creases.</li></ul><h2>Frequently Asked Questions</h2><h3>Are chiffon hijabs suitable for everyday wear?</h3><p>Yes — our chiffon hijabs are designed for daily wear as well as special occasions. The hemming and finishing prevent snagging on jewellery, and the fabric holds up well with regular gentle washing.</p><h3>Do I need to iron my chiffon hijab after every wash?</h3><p>Usually not. Light creases fall out naturally within 20–30 minutes of hanging. For any remaining creases, a garment steamer on a low setting is the quickest and safest solution.</p><h3>Are chiffon hijabs see-through?</h3><p>Chiffon is semi-sheer — this is what gives it its elegant, layered quality. For full opaque coverage, pair with one of our <a href=\"/products/cotton-jersey-undercap-tie-back-hijab-caps\">cotton jersey undercaps</a>, which also adds grip and keeps your style in place all day.</p><h3>How large are your chiffon hijabs?</h3><p>All our chiffon hijabs are approximately 180cm × 70cm — a generous size that suits voluminous wrapping styles as well as simple, minimal looks with plenty of fabric to tuck.</p><h3>Can I use pins with chiffon?</h3><p>You can, but we recommend our <a href=\"/products/strong-hold-everyday-essential-hijab-magnet-set-metallic\">hijab magnets</a> instead. They provide a strong, clean close without piercing the fabric, which significantly extends the life of your chiffon.</p>"
+          }
+        },
+        "button_chiffon": {
+          "type": "button",
+          "settings": {
+            "button_label": "Full Chiffon Care Guide",
+            "button_link": "/blogs/hijab-guide/how-to-wash-care-chiffon-hijab",
+            "button_style_secondary": true,
+            "button_label_2": "Explore Modal Hijabs",
+            "button_link_2": "/collections/modal-hijabs",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_chiffon",
+        "text_chiffon",
+        "button_chiffon"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "collapsible": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "shopify_breadcrumbs_AdcyXN",
+    "banner",
+    "image_banner_6weFwp",
+    "product-grid",
+    "seo-chiffon"
+  ]
+}

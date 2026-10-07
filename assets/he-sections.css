@@ -1,0 +1,631 @@
+/* ============================================================
+   Hijab Elegance — Custom Sections CSS
+   Consolidated: fabric-chapters, our-story, testimonials, reviews
+   Font note: Cormorant Garamond (Shopify CDN, no Google API) used for italic accents —
+   no external API call needed.
+   ============================================================ */
+
+/* ── Fabric Chapters ─────────────────────────────────────── */
+
+.he-fabric-intro {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.he-fabric-intro__eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 18px;
+}
+
+.he-fabric-intro__heading {
+  font-size: clamp(42px, 5vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.he-fabric-intro__heading em {
+  font-family: var(--font-accent-family);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.he-chapter-panel {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 88vh;
+  align-items: center;
+}
+
+.he-chapter-panel--reversed {
+  grid-template-columns: 40% 60%;
+}
+
+.he-chapter-image {
+  overflow: hidden;
+  height: 88vh;
+}
+
+.he-chapter-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.he-chapter-panel--reversed .he-chapter-image { order: 2; }
+.he-chapter-panel--reversed .he-chapter-content { order: 1; }
+
+.he-chapter-content {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.he-chapter-content__label {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+}
+
+.he-chapter-content__fabric-name {
+  font-family: var(--font-accent-family);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(52px, 6vw, 80px);
+  line-height: 1;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.he-chapter-content__subtitle {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b38072;
+  font-weight: 400;
+}
+
+.he-chapter-content__description {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #555;
+  max-width: 360px;
+  margin: 0;
+}
+
+.he-chapter-content__fabric-link,
+.he-chapter-content__fabric-link:hover,
+.he-chapter-content__fabric-link:focus {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+}
+
+.he-chapter-image a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.he-chapter-image a img {
+  transition: transform 0.5s ease;
+}
+
+.he-chapter-image a:hover img {
+  transform: scale(1.03);
+}
+
+.he-chapter-content__link {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+  align-self: flex-start;
+  font-weight: 400;
+}
+
+.he-chapter-content__link:hover {
+  border-color: #1a1a1a;
+}
+
+/* ── Our Story ───────────────────────────────────────────── */
+
+.he-our-story { background: #fff; }
+
+.he-our-story__grid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 600px;
+}
+
+.he-our-story__image-col {
+  position: relative;
+  overflow: hidden;
+}
+
+.he-our-story__image-col img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.he-our-story__image-placeholder {
+  position: absolute;
+  inset: 0;
+  background: #f2ede8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.he-our-story__image-placeholder svg {
+  width: 64px;
+  height: 64px;
+  fill: #c8b8a8;
+}
+
+.he-our-story__content-col {
+  display: flex;
+  align-items: center;
+  padding: 72px 60px 72px 64px;
+}
+
+.he-our-story__content {
+  max-width: 480px;
+  width: 100%;
+}
+
+.he-our-story__eyebrow {
+  display: block;
+  font-size: 10px;
+  font-family: var(--font-body-family, sans-serif);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.he-our-story__heading {
+  margin: 0 0 28px;
+  line-height: 1.1;
+}
+
+.he-our-story__heading-plain {
+  display: block;
+  font-family: var(--font-heading-family, sans-serif);
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: -0.01em;
+}
+
+.he-our-story__heading-italic {
+  display: block;
+  font-family: var(--font-accent-family);
+  font-size: clamp(44px, 4.5vw, 60px);
+  font-weight: 300;
+  font-style: italic;
+  color: #1a1a1a;
+  letter-spacing: 0.01em;
+}
+
+.he-our-story__body { margin-bottom: 40px; }
+
+.he-our-story__body p,
+.he-our-story__body .rte p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 0 16px;
+}
+
+.he-our-story__body p:last-child,
+.he-our-story__body .rte p:last-child { margin-bottom: 0; }
+
+.he-our-story__body-gap { height: 16px; }
+
+.he-our-story__stats {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.he-our-story__stat {
+  flex: 1;
+  padding-right: 32px;
+}
+
+.he-our-story__stat + .he-our-story__stat {
+  padding-left: 32px;
+  padding-right: 0;
+  border-left: 1px solid #ddd;
+}
+
+.he-our-story__stat-value {
+  display: block;
+  font-family: var(--font-accent-family);
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.he-our-story__stat-label {
+  display: block;
+  font-size: 10px;
+  font-family: var(--font-body-family, sans-serif);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* ── Testimonials ────────────────────────────────────────── */
+
+.he-testimonials {
+  background-color: var(--he-testimonials-bg, #faf8f5);
+  padding: 80px 0;
+}
+
+.he-testimonials__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.he-testimonials__eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 14px;
+  font-family: var(--font-body-family, sans-serif);
+}
+
+.he-testimonials__heading {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.he-testimonials__heading-plain {
+  font-family: var(--font-heading-family, sans-serif);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.he-testimonials__heading-italic {
+  font-family: var(--font-accent-family);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.he-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.he-testimonials__card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.he-testimonials__quote-mark {
+  font-family: var(--font-accent-family);
+  font-size: 48px;
+  line-height: 1;
+  color: #b38072;
+  opacity: 0.4;
+  margin-bottom: 8px;
+  display: block;
+  user-select: none;
+}
+
+.he-testimonials__stars {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.he-testimonials__star {
+  font-size: 14px;
+  color: #b38072;
+  line-height: 1;
+}
+
+.he-testimonials__star--empty { opacity: 0.25; }
+
+.he-testimonials__review {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444444;
+  font-style: normal;
+  margin-top: 16px;
+  flex: 1;
+}
+
+.he-testimonials__customer-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 24px;
+  display: block;
+}
+
+.he-testimonials__location {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 2px;
+  display: block;
+}
+
+.he-testimonials__product {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b38072;
+  margin-top: 8px;
+  display: block;
+}
+
+/* ── Complete the Look (product page related-products heading) ── */
+
+.he-complete-look-heading {
+  margin-bottom: 3.2rem;
+}
+
+.he-complete-look-heading__eyebrow {
+  display: block;
+  font-family: var(--font-heading-family);
+  font-size: 1.0rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b38072;
+  margin-bottom: 1.0rem;
+}
+
+.he-complete-look-heading__title {
+  font-family: var(--font-heading-family);
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  font-weight: 300;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.he-complete-look-heading__title em {
+  font-family: var(--font-accent-family);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ── Fabric Profile (product page) ──────────────────────── */
+
+.he-fabric-profile {
+  margin-top: 2.4rem;
+  padding: 2rem 2.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #faf8f5;
+}
+
+.he-fabric-profile__header {
+  margin-bottom: 1.8rem;
+}
+
+.he-fabric-profile__title-label {
+  font-family: var(--font-heading-family);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.he-fabric-profile__fabric-name {
+  font-family: var(--font-heading-family);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b38072;
+}
+
+.he-fabric-profile__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.he-fabric-profile__row {
+  display: grid;
+  grid-template-columns: 7.2rem 7rem 1fr;
+  align-items: center;
+  gap: 1.0rem;
+}
+
+.he-fabric-profile__attr {
+  font-family: var(--font-heading-family);
+  font-size: 1.0rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.he-fabric-profile__dots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.he-fabric-profile__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.he-fabric-profile__dot--filled {
+  background: #b38072;
+}
+
+.he-fabric-profile__desc {
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+/* ── Reviews (Judge.me heading wrapper) ──────────────────── */
+
+.he-reviews-header {
+  background-color: #faf8f5;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.he-reviews-header__inner {
+  text-align: center;
+}
+
+/* ── Mobile ──────────────────────────────────────────────── */
+
+@media screen and (max-width: 749px) {
+  .he-chapter-panel,
+  .he-chapter-panel--reversed {
+    display: flex;
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .he-chapter-panel--reversed .he-chapter-image,
+  .he-chapter-panel--reversed .he-chapter-content {
+    order: unset;
+  }
+
+  .he-chapter-image {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .he-chapter-content {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 16px;
+  }
+
+  .he-chapter-content__fabric-name {
+    font-size: clamp(40px, 12vw, 60px);
+  }
+
+  .he-fabric-intro {
+    padding: 60px 20px 40px;
+  }
+
+  .he-our-story__grid {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .he-our-story__image-col {
+    position: relative;
+    height: 320px;
+  }
+
+  .he-our-story__content-col {
+    padding: 48px 24px 56px;
+  }
+
+  .he-our-story__content { max-width: 100%; }
+
+  .he-our-story__heading-plain { font-size: 36px; }
+  .he-our-story__heading-italic { font-size: 40px; }
+
+  .he-testimonials { padding: 56px 0; }
+
+  .he-testimonials__header {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .he-testimonials__grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .he-testimonials__card { padding: 28px 24px; }
+
+  .he-fabric-profile {
+    padding: 1.6rem;
+  }
+
+  .he-fabric-profile__row {
+    grid-template-columns: 5.5rem 5.8rem 1fr;
+    gap: 0.6rem;
+  }
+
+  .he-fabric-profile__attr {
+    font-size: 0.85rem;
+  }
+
+  .he-fabric-profile__desc {
+    font-size: 1.1rem;
+  }
+
+  .he-complete-look-heading {
+    margin-bottom: 2.4rem;
+  }
+
+  .he-complete-look-heading__title {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .he-our-story__content-col {
+    padding: 56px 40px 56px 48px;
+  }
+
+  .he-testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shopify_breadcrumbs_AHqWir": {
+      "type": "shopify-breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_enabled": true,
+        "breadcrumbs_menu_definition": "main-menu",
+        "prefer_shortest_path": false,
+        "separator_shape": "triangle",
+        "font_size": 14,
+        "color_scheme": "",
+        "enable_divider": false,
+        "divider_color": "#ccc",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "4be23d01-56a2-4a61-a937-47d22f8d22b7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20594768019741__4be23d01-56a2-4a61-a937-47d22f8d22b7-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/letter-from-founder.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20594768019741__4be23d01-56a2-4a61-a937-47d22f8d22b7-slide-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "shopify_breadcrumbs_AHqWir",
+    "4be23d01-56a2-4a61-a937-47d22f8d22b7",
+    "main"
+  ]
+}

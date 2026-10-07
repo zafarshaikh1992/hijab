@@ -1,0 +1,177 @@
+{%- liquid
+  assign bg_color = section.settings.background_color | default: '#faf8f5'
+-%}
+
+<section
+  class="he-testimonials"
+  id="he-testimonials-{{ section.id }}"
+  style="--he-testimonials-bg: {{ bg_color }};"
+>
+  <div class="he-testimonials__header">
+    {%- if section.settings.eyebrow != blank -%}
+      <span class="he-testimonials__eyebrow">{{ section.settings.eyebrow | escape }}</span>
+    {%- endif -%}
+
+    <h2 class="he-testimonials__heading">
+      {%- if section.settings.heading_plain != blank -%}
+        <span class="he-testimonials__heading-plain">{{ section.settings.heading_plain | escape }}&nbsp;</span>
+      {%- endif -%}
+      {%- if section.settings.heading_italic != blank -%}
+        <span class="he-testimonials__heading-italic">{{ section.settings.heading_italic | escape }}</span>
+      {%- endif -%}
+    </h2>
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="he-testimonials__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'testimonial' -%}
+          {%- assign rating = block.settings.rating | default: 5 -%}
+          <div class="he-testimonials__card" {{ block.shopify_attributes }}>
+            <span class="he-testimonials__quote-mark" aria-hidden="true">&#8220;</span>
+
+            <div class="he-testimonials__stars" aria-label="{{ rating }} out of 5 stars">
+              {%- for i in (1..5) -%}
+                {%- if i <= rating -%}
+                  <span class="he-testimonials__star" aria-hidden="true">&#9733;</span>
+                {%- else -%}
+                  <span class="he-testimonials__star he-testimonials__star--empty" aria-hidden="true">&#9733;</span>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+
+            {%- if block.settings.review != blank -%}
+              <p class="he-testimonials__review">{{ block.settings.review | escape }}</p>
+            {%- endif -%}
+
+            {%- if block.settings.customer_name != blank -%}
+              <span class="he-testimonials__customer-name">{{ block.settings.customer_name | escape }}</span>
+            {%- endif -%}
+
+            {%- if block.settings.location != blank -%}
+              <span class="he-testimonials__location">{{ block.settings.location | escape }}</span>
+            {%- endif -%}
+
+            {%- if block.settings.product_purchased != blank -%}
+              <span class="he-testimonials__product">{{ block.settings.product_purchased | escape }}</span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "In Their Words",
+  "tag": "section",
+  "class": "he-testimonials-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Testimonials"
+    },
+    {
+      "type": "text",
+      "id": "heading_plain",
+      "label": "Heading — plain part",
+      "default": "In Their"
+    },
+    {
+      "type": "text",
+      "id": "heading_italic",
+      "label": "Heading — italic part",
+      "default": "Words"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#faf8f5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "review",
+          "label": "Review text"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer name"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location"
+        },
+        {
+          "type": "text",
+          "id": "product_purchased",
+          "label": "Product purchased"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "In Their Words",
+      "settings": {
+        "eyebrow": "Testimonials",
+        "heading_plain": "In Their",
+        "heading_italic": "Words",
+        "background_color": "#faf8f5"
+      },
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "review": "The modal hijab is the softest fabric I’ve ever worn. It drapes beautifully and stays in place all day. This is the only brand I buy from now.",
+            "customer_name": "Sarah M.",
+            "location": "New York, NY",
+            "product_purchased": "Dusty Rose Modal",
+            "rating": 5
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "review": "Finally found a chiffon hijab that doesn’t slip! The quality is incredible for the price. I’ve gotten so many compliments.",
+            "customer_name": "Amina K.",
+            "location": "Chicago, IL",
+            "product_purchased": "Sage Chiffon",
+            "rating": 5
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "review": "The jersey hijabs are my everyday go-to. So comfortable and the colors are exactly as shown. Fast shipping too!",
+            "customer_name": "Fatima R.",
+            "location": "San Francisco, CA",
+            "product_purchased": "Mocha Jersey",
+            "rating": 5
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,145 @@
+<section class="he-our-story" id="he-our-story-{{ section.id }}">
+  <div class="he-our-story__grid">
+
+    {%- comment -%} Left: Image column {%- endcomment -%}
+    <div class="he-our-story__image-col">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1400
+          | image_tag:
+            loading: 'lazy',
+            widths: '600, 800, 1000, 1200, 1400',
+            sizes: '(max-width: 749px) 100vw, 55vw',
+            alt: section.settings.image.alt | escape
+        }}
+      {%- else -%}
+        <div class="he-our-story__image-placeholder">
+          {{ 'lifestyle-1' | placeholder_svg_tag }}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Right: Content column {%- endcomment -%}
+    <div class="he-our-story__content-col">
+      <div class="he-our-story__content">
+
+        {%- if section.settings.eyebrow != blank -%}
+          <span class="he-our-story__eyebrow">{{ section.settings.eyebrow }}</span>
+        {%- endif -%}
+
+        <h2 class="he-our-story__heading">
+          {%- if section.settings.heading_plain != blank -%}
+            <span class="he-our-story__heading-plain">{{ section.settings.heading_plain }}</span>
+          {%- endif -%}
+          {%- if section.settings.heading_italic != blank -%}
+            <span class="he-our-story__heading-italic">{{ section.settings.heading_italic }}</span>
+          {%- endif -%}
+        </h2>
+
+        <div class="he-our-story__body">
+          {%- if section.settings.body_text_1 != blank -%}
+            <div class="rte">{{ section.settings.body_text_1 }}</div>
+          {%- endif -%}
+          {%- if section.settings.body_text_1 != blank and section.settings.body_text_2 != blank -%}
+            <div class="he-our-story__body-gap"></div>
+          {%- endif -%}
+          {%- if section.settings.body_text_2 != blank -%}
+            <div class="rte">{{ section.settings.body_text_2 }}</div>
+          {%- endif -%}
+        </div>
+
+        <div class="he-our-story__stats">
+          <div class="he-our-story__stat">
+            <span class="he-our-story__stat-value">{{ section.settings.stat_1_value }}</span>
+            <span class="he-our-story__stat-label">{{ section.settings.stat_1_label }}</span>
+          </div>
+          <div class="he-our-story__stat">
+            <span class="he-our-story__stat-value">{{ section.settings.stat_2_value }}</span>
+            <span class="he-our-story__stat-label">{{ section.settings.stat_2_label }}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Our Story",
+  "tag": "section",
+  "class": "he-our-story-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "OUR STORY"
+    },
+    {
+      "type": "text",
+      "id": "heading_plain",
+      "label": "Heading (plain)",
+      "default": "Crafted with"
+    },
+    {
+      "type": "text",
+      "id": "heading_italic",
+      "label": "Heading (italic)",
+      "default": "Intention"
+    },
+    {
+      "type": "richtext",
+      "id": "body_text_1",
+      "label": "Body text (paragraph 1)",
+      "default": "<p>We started Hijab Elegance with a single belief: that modest fashion should never mean compromising on quality, comfort, or style. Every piece we create begins with the woman who will wear it — her lifestyle, her values, her everyday moments.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "body_text_2",
+      "label": "Body text (paragraph 2)",
+      "default": "<p>From the thread we source to the hands that stitch each seam, intention is woven into everything we do. We are a small team with a big love for the community we serve — and we are just getting started.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Stats"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_value",
+      "label": "Stat 1 value",
+      "default": "50k+"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_label",
+      "label": "Stat 1 label",
+      "default": "HAPPY CUSTOMERS"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_value",
+      "label": "Stat 2 value",
+      "default": "4.9"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_label",
+      "label": "Stat 2 label",
+      "default": "STAR RATING"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Story"
+    }
+  ]
+}
+{% endschema %}

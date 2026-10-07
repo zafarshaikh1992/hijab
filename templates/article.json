@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shopify_breadcrumbs_phBnMK": {
+      "type": "shopify-breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_enabled": true,
+        "breadcrumbs_menu_definition": "main-menu",
+        "prefer_shortest_path": false,
+        "separator_shape": "triangle",
+        "font_size": 14,
+        "color_scheme": "",
+        "enable_divider": false,
+        "divider_color": "#ccc",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "medium"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "shopify_breadcrumbs_phBnMK",
+    "main"
+  ]
+}

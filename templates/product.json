@@ -1,0 +1,211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shopify_breadcrumbs_nU3KQ6": {
+      "type": "shopify-breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_enabled": true,
+        "breadcrumbs_menu_definition": "main-menu",
+        "prefer_shortest_path": false,
+        "separator_shape": "triangle",
+        "font_size": 14,
+        "color_scheme": "",
+        "enable_divider": false,
+        "divider_color": "#cccccc",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_K94p99": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_BzUjEb": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 5,
+            "show_inventory_quantity": false
+          }
+        },
+        "47dc8cf9-f876-44b1-a900-ec2df5e647f0": {
+          "type": "text",
+          "settings": {
+            "text": "The color may vary due to lightning and displays.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "he-fabric-profile-block": {
+          "type": "fabric_profile",
+          "settings": {}
+        },
+        "c916dcad-cef3-40d1-9674-69b3c76be78f": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Description",
+            "icon": "question_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "2853d588-4592-4ce2-b445-689b10929102": {
+          "type": "description",
+          "settings": {}
+        },
+        "c6b961b5-8457-4b52-848c-16ccb891d624": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials & Care",
+            "icon": "heart",
+            "content": "<p><strong>Discover the future of hijab fashion today.</strong><br/><br/><em><strong>Comfort:</strong></em><br/>Embrace the Cloud-Like Comfort: Our hijabs are a gentle embrace, delicately draping you in clouds of comfort. Crafted from feather-light, breathable fabrics, they accompany you through your day, allowing you to move with grace and ease. Say goodbye to itchy, cumbersome hijabs and say hello to a world where comfort is non-negotiable.</p><p><br/><em><strong>Style and Fashion:</strong></em><br/>Unveil Your Inner Fashionista: Your hijab is an extension of your style, a canvas to express your uniqueness. Dive into our collection where vibrant hues, intricate patterns, and modern designs await. From chic neutrals for everyday elegance to bold statements that turn heads, discover hijabs that effortlessly reflect your fashion-forward spirit.</p><p><br/><em><strong>Durability and Quality:</strong></em><br/>Elevate Every Moment, Every Day: Our hijabs are more than just a garment; they're a testament to quality and craftsmanship. Meticulously crafted with durable materials and impeccable stitching, these hijabs are your companions for the long haul. Each wash, each wear, they retain their vibrant colors and luxurious texture, because you deserve nothing but the best.</p>",
+            "page": ""
+          }
+        },
+        "68bffe4a-d7bd-4a8e-ac7d-798807eb8bdf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "<p>Orders ship same or next business day. Worldwide shipping options are available. Quality guaranteed. Hassle-free returns.</p>",
+            "page": ""
+          }
+        },
+        "ad8ea495-9653-460d-853e-21627354ef43": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_K94p99",
+        "price",
+        "inventory_BzUjEb",
+        "47dc8cf9-f876-44b1-a900-ec2df5e647f0",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "he-fabric-profile-block",
+        "c916dcad-cef3-40d1-9674-69b3c76be78f",
+        "2853d588-4592-4ce2-b445-689b10929102",
+        "c6b961b5-8457-4b52-848c-16ccb891d624",
+        "68bffe4a-d7bd-4a8e-ac7d-798807eb8bdf",
+        "ad8ea495-9653-460d-853e-21627354ef43"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "color_scheme": "",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "columns",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "1694824878428147a0": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "1706040202c78efeb6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_tEEemV": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "default",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_tEEemV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "shopify_breadcrumbs_nU3KQ6",
+    "main",
+    "1694824878428147a0",
+    "related-products",
+    "1706040202c78efeb6"
+  ]
+}

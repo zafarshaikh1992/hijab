@@ -1,0 +1,229 @@
+<section
+  class="he-fabric-chapters"
+  id="he-fabric-chapters-{{ section.id }}"
+>
+
+  {%- comment -%} ── Section intro ── {%- endcomment -%}
+  <div class="he-fabric-intro">
+    {%- if section.settings.eyebrow != blank -%}
+      <span class="he-fabric-intro__eyebrow">{{ section.settings.eyebrow }}</span>
+    {%- endif -%}
+
+    <h2 class="he-fabric-intro__heading">
+      {{- section.settings.heading_plain -}}
+      {%- if section.settings.heading_italic != blank -%}
+        &nbsp;<em>{{ section.settings.heading_italic }}</em>
+      {%- endif -%}
+    </h2>
+  </div>
+
+  {%- comment -%} ── Chapter panels ── {%- endcomment -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'chapter' -%}
+      {%- assign is_even = forloop.index | modulo: 2 -%}
+
+      <div
+        class="he-chapter-panel{% if is_even == 0 %} he-chapter-panel--reversed{% endif %}"
+        {{ block.shopify_attributes }}
+      >
+
+        {%- comment -%} Resolve link once for image, heading, and discover link {%- endcomment -%}
+        {%- assign link_href = block.settings.link -%}
+        {%- if link_href == blank and block.settings.collection != blank -%}
+          {%- assign link_href = block.settings.collection.url -%}
+        {%- endif -%}
+
+        {%- comment -%} Image cell {%- endcomment -%}
+        <div class="he-chapter-image">
+          {%- if link_href != blank -%}<a href="{{ link_href }}" tabindex="-1" aria-hidden="true">{%- endif -%}
+          {%- if block.settings.image != blank -%}
+            {%- comment -%}
+              Fall back to a descriptive alt built from the chapter fields when the
+              image has no alt set in Shopify Files. Empty alt on these tiles was
+              costing us image search and AI crawler context.
+            {%- endcomment -%}
+            {%- liquid
+              assign chapter_alt = block.settings.image.alt
+              if chapter_alt == blank
+                assign chapter_alt = block.settings.fabric_name | append: ' hijab'
+                if block.settings.subtitle != blank
+                  assign chapter_alt = chapter_alt | append: ' — ' | append: block.settings.subtitle
+                endif
+                assign chapter_alt = chapter_alt | append: ' — Hijab Elegance'
+              endif
+            -%}
+            {{
+              block.settings.image
+              | image_url: width: 1400
+              | image_tag:
+                loading: 'lazy',
+                decoding: 'async',
+                alt: chapter_alt,
+                widths: '600, 900, 1200, 1400',
+                sizes: '(max-width: 749px) 100vw, 60vw'
+            }}
+          {%- else -%}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'he-chapter-image__placeholder' }}
+          {%- endif -%}
+          {%- if link_href != blank -%}</a>{%- endif -%}
+        </div>
+
+        {%- comment -%} Content cell {%- endcomment -%}
+        <div class="he-chapter-content">
+
+          {%- if block.settings.chapter_label != blank -%}
+            <span class="he-chapter-content__label">{{ block.settings.chapter_label }}</span>
+          {%- endif -%}
+
+          {%- if block.settings.fabric_name != blank -%}
+            {%- if link_href != blank -%}
+              <a href="{{ link_href }}" class="he-chapter-content__fabric-link">
+                <h3 class="he-chapter-content__fabric-name">{{ block.settings.fabric_name }}</h3>
+              </a>
+            {%- else -%}
+              <h3 class="he-chapter-content__fabric-name">{{ block.settings.fabric_name }}</h3>
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- if block.settings.subtitle != blank -%}
+            <span class="he-chapter-content__subtitle">{{ block.settings.subtitle }}</span>
+          {%- endif -%}
+
+          {%- if block.settings.description != blank -%}
+            <p class="he-chapter-content__description">{{ block.settings.description }}</p>
+          {%- endif -%}
+
+          {%- if link_href != blank -%}
+            <a
+              href="{{ link_href }}"
+              class="he-chapter-content__link"
+              aria-label="{{ block.settings.link_label }} {{ block.settings.fabric_name }}"
+            >
+              {{- block.settings.link_label -}}&nbsp;&rarr;
+            </a>
+          {%- endif -%}
+
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+
+</section>
+
+{% schema %}
+{
+  "name": "Fabric Chapters",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "OUR FABRICS"
+    },
+    {
+      "type": "text",
+      "id": "heading_plain",
+      "label": "Heading (plain)",
+      "default": "Curated by"
+    },
+    {
+      "type": "text",
+      "id": "heading_italic",
+      "label": "Heading (italic)",
+      "default": "Touch"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chapter",
+      "name": "Chapter",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Fabric image"
+        },
+        {
+          "type": "text",
+          "id": "chapter_label",
+          "label": "Chapter label",
+          "default": "CHAPTER 01"
+        },
+        {
+          "type": "text",
+          "id": "fabric_name",
+          "label": "Fabric name",
+          "default": "Modal"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "SILKY SOFT & BREATHABLE"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Exceptionally soft against the skin, our modal fabric drapes beautifully and keeps you comfortable through every moment of your day."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label",
+          "default": "DISCOVER"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL (overrides collection)"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection (fallback link)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fabric Chapters",
+      "blocks": [
+        {
+          "type": "chapter",
+          "settings": {
+            "chapter_label": "CHAPTER 01",
+            "fabric_name": "Modal",
+            "subtitle": "SILKY SOFT & BREATHABLE",
+            "description": "Exceptionally soft against the skin, our modal fabric drapes beautifully and keeps you comfortable through every moment of your day.",
+            "link_label": "DISCOVER"
+          }
+        },
+        {
+          "type": "chapter",
+          "settings": {
+            "chapter_label": "CHAPTER 02",
+            "fabric_name": "Chiffon",
+            "subtitle": "LIGHT AS AIR",
+            "description": "Weightless and flowing, our chiffon hijabs move with you — an effortless elegance for any occasion, from morning prayer to evening events.",
+            "link_label": "DISCOVER"
+          }
+        },
+        {
+          "type": "chapter",
+          "settings": {
+            "chapter_label": "CHAPTER 03",
+            "fabric_name": "Jersey",
+            "subtitle": "EVERYDAY COMFORT",
+            "description": "The perfect companion for busy days. Our premium jersey stretches gently, stays put, and requires no pinning — modest style made simple.",
+            "link_label": "DISCOVER"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

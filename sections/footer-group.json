@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "012dd382-3e90-4e94-96e4-ffe904b9e864": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/wae_2d132009-7a61-43b8-894c-b6d03501ec7a.png",
+            "image_width": 250,
+            "alignment": ""
+          }
+        },
+        "8e4d5f11-cf12-44a3-912c-6220a7fb6a11": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Community",
+            "menu": "footer"
+          }
+        },
+        "8cbe7158-6d89-4b79-bc0c-80608dcb7e76": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Company",
+            "menu": "footer"
+          }
+        },
+        "540a9bb8-e62f-487c-8161-f1316aa4f04a": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Help",
+            "menu": "footer"
+          }
+        },
+        "9a7732a9-efdb-4d27-a9d6-862bab29d774": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "subtext": ""
+          }
+        }
+      },
+      "block_order": [
+        "012dd382-3e90-4e94-96e4-ffe904b9e864",
+        "8e4d5f11-cf12-44a3-912c-6220a7fb6a11",
+        "8cbe7158-6d89-4b79-bc0c-80608dcb7e76",
+        "540a9bb8-e62f-487c-8161-f1316aa4f04a",
+        "9a7732a9-efdb-4d27-a9d6-862bab29d774"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe for new releases, promotions, hijab news and more:",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,136 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shopify_breadcrumbs_gnhHPY": {
+      "type": "shopify-breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_enabled": true,
+        "breadcrumbs_menu_definition": "main-menu",
+        "prefer_shortest_path": false,
+        "separator_shape": "triangle",
+        "font_size": 14,
+        "color_scheme": "",
+        "enable_divider": false,
+        "divider_color": "#ccc",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "image_banner_6weFwp": {
+      "type": "image-banner",
+      "blocks": {
+        "text_rGzmzw": {
+          "type": "text",
+          "settings": {
+            "text": "Impossibly soft, naturally breathable — our signature all-day fabric.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_rGzmzw"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Modal-Hijab-and-cap.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "seo-modal": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_modal": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Complete Modal Hijab Guide",
+            "heading_size": "h2"
+          }
+        },
+        "text_modal": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>What Makes Modal Hijabs Different?</h2><p><strong>Modal hijabs</strong> are made from premium modal — a fabric renowned for being exceptionally soft against the skin, naturally breathable, and moisture-wicking. If you've ever found synthetic hijabs uncomfortable or scratchy at the hairline, modal changes everything. The micro-smooth surface also helps the fabric hold colour beautifully — our shades stay vivid wash after wash.</p><h2>Why Our Customers Love Modal</h2><ul><li><strong>All-day comfort</strong> — The smooth fibre surface prevents friction and irritation, making it ideal for sensitive skin and long wear.</li><li><strong>Naturally breathable</strong> — Modal is highly moisture-wicking, keeping you cool and fresh in warm weather and stuffy indoor environments.</li><li><strong>Effortless styling</strong> — The fabric has just enough texture to grip itself, so simple pin-free wraps stay in place without constant adjusting.</li><li><strong>Exceptional colour retention</strong> — Modal holds dyes better than most fabrics. Colours stay vivid through regular machine washing.</li><li><strong>Eco-conscious</strong> — Premium modal is produced using responsible manufacturing processes — one of the more sustainably made textiles available.</li></ul><h2>How to Style a Modal Hijab</h2><ul><li><strong>Simple everyday wrap</strong> — Modal's weight and drape hold a clean, neat look with minimal effort. Tuck under the chin and you're done.</li><li><strong>Pin-free style</strong> — The fabric grips naturally, making it one of the easiest fabrics for pinless wrapping throughout the day.</li><li><strong>Layered coverage</strong> — Modal is opaque enough to wear as a single layer without an undercap showing through — though pairing with our <a href=\"/products/cotton-jersey-undercap-tie-back-hijab-caps\">jersey undercap</a> adds grip and keeps everything secure on longer days.</li></ul><p>For a seamless pin-free finish, our <a href=\"/products/strong-hold-everyday-essential-hijab-magnet-set-metallic\">hijab magnets</a> are the perfect companion — strong hold without any puncture marks on the fabric.</p><h2>Modal vs Chiffon — Which Fabric Is Right for You?</h2><p>Modal hijabs are the everyday essential — softer, denser, and more opaque than chiffon, with a comfortable drape that works from morning commute to evening plans. Our <a href=\"/collections/chiffon-hijabs\">chiffon hijabs</a> have a lighter, more luminous quality — the go-to for weddings, formal events, and any occasion where you want that elegant floaty look. Many customers own both and switch depending on the outfit and occasion.</p><h2>Modal Hijab Care Guide</h2><p>For the full step-by-step, see our <a href=\"/blogs/hijab-guide/how-to-wash-care-modal-hijab\">modal hijab care guide</a>. The key points are below:</p><ul><li><strong>Washing</strong> — Machine wash on a gentle cycle at 30°C (cold). Modal is far more durable than it feels — no hand-washing required, though a mesh laundry bag is a good habit.</li><li><strong>Detergent</strong> — Use a mild liquid detergent. Avoid fabric softeners — modal is naturally soft and softeners can reduce its moisture-wicking properties over time.</li><li><strong>Drying</strong> — Tumble dry on low, or hang to air dry. Modal dries quickly and bounces back to its original drape without creasing.</li><li><strong>Ironing</strong> — Rarely needed. If required, use a low heat setting. Modal is naturally wrinkle-resistant and usually looks perfect straight from the drying rack.</li><li><strong>Storage</strong> — Fold or roll loosely. Modal is forgiving with storage and releases any light creases quickly when worn.</li></ul><h2>Frequently Asked Questions</h2><h3>Is modal fabric sustainable?</h3><p>Yes. Modal is generally considered one of the more eco-conscious fabric choices available. It's derived from wood pulp and produced using less water and chemicals than conventional cotton. For specific certifications, feel free to reach out to us directly.</p><h3>Are modal hijabs good for sensitive skin?</h3><p>Modal is hypoallergenic and exceptionally gentle — the micro-smooth fibre structure means no roughness against the hairline, face, or neck. It's a common recommendation for people with eczema, rosacea, or general skin sensitivities.</p><h3>Will modal hijabs stretch or lose their shape?</h3><p>No. Modal is dimensionally stable — it holds its shape and dimensions through regular machine washing without stretching, shrinking, or losing its drape. This is one of modal's standout practical advantages over other soft fabrics.</p><h3>How large are the modal hijabs?</h3><p>All our modal hijabs are approximately 180cm × 70cm — generous enough for layered, full-coverage styles as well as simple, minimal wraps.</p><h3>Do modal hijabs need an undercap?</h3><p>Not necessarily — modal is opaque enough to wear alone. But if you prefer added grip and a clean hairline finish, our <a href=\"/products/cotton-jersey-undercap-tie-back-hijab-caps\">jersey undercap</a> pairs perfectly with modal and stays comfortable all day.</p>"
+          }
+        },
+        "button_modal": {
+          "type": "button",
+          "settings": {
+            "button_label": "Full Modal Care Guide",
+            "button_link": "/blogs/hijab-guide/how-to-wash-care-modal-hijab",
+            "button_style_secondary": true,
+            "button_label_2": "Explore Chiffon Hijabs",
+            "button_link_2": "/collections/chiffon-hijabs",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_modal",
+        "text_modal",
+        "button_modal"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "collapsible": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "shopify_breadcrumbs_gnhHPY",
+    "banner",
+    "image_banner_6weFwp",
+    "product-grid",
+    "seo-modal"
+  ]
+}

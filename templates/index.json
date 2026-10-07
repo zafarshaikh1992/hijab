@@ -1,0 +1,374 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_aeLCFR": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Pyg3Qr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium Hijabs — Hijab Elegance",
+            "heading_size": "h1"
+          }
+        },
+        "text_pEk9V4": {
+          "type": "text",
+          "settings": {
+            "text": "Chiffon, modal &amp; jersey hijabs — crafted for every occasion",
+            "text_style": "body"
+          }
+        },
+        "buttons_3PGwD4": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pyg3Qr",
+        "text_pEk9V4",
+        "buttons_3PGwD4"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/premium-hijab-graceful-by-nature-hero-hijab-elegance.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "he-fabric-chapters-main": {
+      "type": "he-fabric-chapters",
+      "blocks": {
+        "chapter-jersey": {
+          "type": "chapter",
+          "settings": {
+            "image": "shopify://shop_images/jersey-hijab-stretch-comfort-everyday-hijab-elegance.webp",
+            "chapter_label": "CHAPTER 01",
+            "fabric_name": "Jersey",
+            "subtitle": "STRETCH & COMFORT",
+            "description": "Premium bamboo-blend jersey that moves with you. The everyday essential.",
+            "link_label": "DISCOVER",
+            "link": "/collections/jersey-hijabs",
+            "collection": ""
+          }
+        },
+        "chapter-modal": {
+          "type": "chapter",
+          "settings": {
+            "image": "shopify://shop_images/modal-hijab-silky-soft-breathable-hijab-elegance.webp",
+            "chapter_label": "CHAPTER 02",
+            "fabric_name": "Modal",
+            "subtitle": "SILKY SOFT & BREATHABLE",
+            "description": "Our signature fabric — impossibly soft, naturally breathable, and perfect for all-day wear.",
+            "link_label": "DISCOVER",
+            "link": "/collections/modal-hijabs",
+            "collection": ""
+          }
+        },
+        "chapter_tnwtGR": {
+          "type": "chapter",
+          "settings": {
+            "image": "shopify://shop_images/satin-silk-hijab-luxury-elegant-hijab-elegance.webp",
+            "chapter_label": "CHAPTER 03",
+            "fabric_name": "Satin Silk",
+            "subtitle": "LUMINOUS & LUXURIOUS",
+            "description": "Exceptionally soft against the skin, our Satin Silk fabric drapes beautifully and keeps you comfortable through every moment of your day.",
+            "link_label": "DISCOVER",
+            "link": "shopify://collections/satin-hijabs",
+            "collection": ""
+          }
+        },
+        "chapter-chiffon": {
+          "type": "chapter",
+          "settings": {
+            "image": "shopify://shop_images/chiffon-hijab-weightless-elegant-hijab-elegance.webp",
+            "chapter_label": "CHAPTER 04",
+            "fabric_name": "Chiffon",
+            "subtitle": "WEIGHTLESS & ELEGANT",
+            "description": "Feather-light and gracefully translucent. The quintessential fabric for formal occasions.",
+            "link_label": "DISCOVER",
+            "link": "/collections/chiffon-hijabs",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "chapter-jersey",
+        "chapter-modal",
+        "chapter_tnwtGR",
+        "chapter-chiffon"
+      ],
+      "settings": {
+        "eyebrow": "OUR FABRICS",
+        "heading_plain": "Curated by",
+        "heading_italic": "Touch"
+      }
+    },
+    "ccb431bc-f3cf-4ee2-89d6-8cd0ea46addf": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best <em>Sellers</em>",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "hijab-8",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "multicolumn_brcy3k": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QUbCtt": {
+          "type": "column",
+          "settings": {
+            "icon": "star",
+            "title": "Premium Fabrics",
+            "text": "<p>Ethically sourced modal, chiffon, and jersey from the world's finest mills.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gWtk7j": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "title": "All-Day Comfort",
+            "text": "<p>Designed for real life — soft, breathable, and effortlessly secure.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HzAQ87": {
+          "type": "column",
+          "settings": {
+            "icon": "truck",
+            "title": "Free Shipping",
+            "text": "<p>Complimentary shipping on all orders over $30. Delivered with care.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pgLaDM": {
+          "type": "column",
+          "settings": {
+            "icon": "return",
+            "title": "30-Day Returns",
+            "text": "<p>Not quite right? Return within 30 days for a full refund.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_QUbCtt",
+        "column_gWtk7j",
+        "column_HzAQ87",
+        "column_pgLaDM"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Why Choose <em>Us</em>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "ivory_background": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "he-collage-lookbook": {
+      "type": "collage",
+      "blocks": {
+        "lookbook-col-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "shop-all-hijabs"
+          }
+        },
+        "lookbook-img-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Hijab-Cap-Maroon-front-view-with-string.jpg"
+          }
+        },
+        "lookbook-img-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hijab-magnets-no-snag-easy-pin-free-hijab-elegance.webp"
+          }
+        }
+      },
+      "block_order": [
+        "lookbook-col-1",
+        "lookbook-img-1",
+        "lookbook-img-2"
+      ],
+      "settings": {
+        "heading": "Styling <em>Lookbook</em>",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "he-our-story-main": {
+      "type": "he-our-story",
+      "settings": {
+        "eyebrow": "OUR STORY",
+        "heading_plain": "Crafted with",
+        "heading_italic": "Intention",
+        "body_text_1": "<p>Born in San Francisco, Hijab Elegance was founded on a simple belief: that modest fashion deserves the same level of quality, design, and attention to detail as any luxury brand.</p>",
+        "body_text_2": "<p>Every hijab in our collection is crafted from ethically sourced premium fabrics, designed to feel as beautiful as it looks. From the softness of our modal to the lightness of our chiffon — each piece is a testament to intentional design.</p>",
+        "stat_1_value": "2000+",
+        "stat_1_label": "HAPPY CUSTOMERS",
+        "stat_2_value": "4.9",
+        "stat_2_label": "STAR RATING"
+      }
+    },
+    "he-reviews-main": {
+      "type": "he-reviews",
+      "settings": {
+        "eyebrow": "CUSTOMER REVIEWS",
+        "heading_plain": "What They're",
+        "heading_italic": "Saying",
+        "color_scheme": "background-2",
+        "padding_top": 80,
+        "padding_bottom": 20
+      }
+    },
+    "1781050181462c647e": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_7Ewy3d": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#f9f9f9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_7Ewy3d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "30ba5786-af2d-415e-a743-f8ace5326da2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20462767898909__30ba5786-af2d-415e-a743-f8ace5326da2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hijab Elegance: Premium Hijabs & Modest Wear for Every Occasion",
+            "heading_size": "h1"
+          }
+        },
+        "template--20462767898909__30ba5786-af2d-415e-a743-f8ace5326da2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>Welcome to Hijab Elegance</strong></h2><h3>The Hijab Brand That Makes Your Dreams Come True</h3><p>At Hijab Elegance, we believe every woman deserves to feel confident, beautiful, and comfortable in her style. Our hijabs are thoughtfully designed with elegance, versatility, and comfort in mind—so you can express your individuality with ease.</p><h2><strong>Hijabs for Every Occasion</strong></h2><p>From everyday wear to special events, our collections offer the perfect hijab for every moment. Discover lightweight jersey hijabs for daily comfort, airy modal hijabs for easy styling, sophisticated chiffon hijabs for a polished finish, and luxurious satin silk hijabs for weddings and formal occasions. With new colors and fabrics added often, you'll always find something to match your wardrobe.</p><h2><strong>Style Meets Comfort</strong></h2><p>We craft our hijabs using breathable, soft fabrics that balance durability with elegance. Whether you prefer effortless jersey or the flow of chiffon, every piece is created to help you look stylish while staying comfortable. Complete your look with our essentials, including jersey undercaps for a secure fit and hijab magnets that replace pins with ease and grace.</p><h2><strong>Why Choose Hijab Elegance?</strong></h2><ul><li><strong>Wide variety of hijab fabrics:</strong> jersey, modal, chiffon, satin silk</li><li><strong>Everyday styles and occasion-ready designs</strong> tailored for every need</li><li><strong>Seamless shopping experience:</strong> Buy hijabs online from the comfort of your home with fast shipping that brings the \"shop hijabs near me\" convenience to your doorstep</li><li><strong>Lightweight, breathable, and easy-to-style options</strong> for all-day comfort</li><li><strong>Accessories like undercaps and magnets</strong> for a flawless finish</li><li><strong>A trusted modest fashion brand</strong> committed to quality and care</li></ul><h2><strong>Find Your Perfect Hijab Today</strong></h2><p>Your hijab should feel as beautiful as it looks. Explore our latest collections and discover stylish, comfortable, and modern hijabs crafted just for you.</p><p><a href=\"/collections/modal-hijabs\" title=\"Modal Hijabs — Soft, Breathable &amp; Everyday | Hijab Elegance\"><strong>[Shop Now]</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20462767898909__30ba5786-af2d-415e-a743-f8ace5326da2-heading-1",
+        "template--20462767898909__30ba5786-af2d-415e-a743-f8ace5326da2-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "collapsible": true,
+        "padding_top": 36,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "image_banner_aeLCFR",
+    "he-fabric-chapters-main",
+    "ccb431bc-f3cf-4ee2-89d6-8cd0ea46addf",
+    "multicolumn_brcy3k",
+    "he-collage-lookbook",
+    "he-our-story-main",
+    "he-reviews-main",
+    "1781050181462c647e",
+    "30ba5786-af2d-415e-a743-f8ace5326da2"
+  ]
+}

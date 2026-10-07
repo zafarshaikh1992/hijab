@@ -1,0 +1,137 @@
+{%- comment -%}
+  he-fabric-profile.liquid
+  Fabric Profile card — dot-based attribute ratings per fabric type.
+  Auto-populates based on product.type (no metafields required).
+  Renders nothing if product type is not recognised.
+{%- endcomment -%}
+
+{%- liquid
+  assign fp_type  = product.type | downcase
+  assign fp_title = product.title | downcase
+  assign fp_label = ''
+
+  if fp_type contains 'chiffon' or fp_title contains 'chiffon'
+    assign fp_label          = 'LUXURY CHIFFON'
+    assign fp_opacity        = 4
+    assign fp_weight         = 2
+    assign fp_drape          = 5
+    assign fp_hold           = 1
+    assign fp_stretch        = 1
+    assign fp_opacity_label  = 'Nearly opaque'
+    assign fp_weight_label   = 'Feather-light'
+    assign fp_drape_label    = 'Flowing & fluid'
+    assign fp_hold_label     = 'Needs an undercap'
+    assign fp_stretch_label  = 'Minimal stretch'
+  elsif fp_type contains 'modal' or fp_title contains 'modal'
+    assign fp_label          = 'PREMIUM MODAL'
+    assign fp_opacity        = 3
+    assign fp_weight         = 3
+    assign fp_drape          = 4
+    assign fp_hold           = 3
+    assign fp_stretch        = 2
+    assign fp_opacity_label  = 'Semi-opaque'
+    assign fp_weight_label   = 'Light'
+    assign fp_drape_label    = 'Very fluid'
+    assign fp_hold_label     = 'Moderate hold'
+    assign fp_stretch_label  = 'Low stretch'
+  elsif fp_type contains 'bamboo' or fp_title contains 'bamboo'
+    assign fp_label          = 'BAMBOO JERSEY'
+    assign fp_opacity        = 5
+    assign fp_weight         = 3
+    assign fp_drape          = 3
+    assign fp_hold           = 5
+    assign fp_stretch        = 4
+    assign fp_opacity_label  = 'Fully opaque'
+    assign fp_weight_label   = 'Light'
+    assign fp_drape_label    = 'Fluid'
+    assign fp_hold_label     = 'Stays in place all day'
+    assign fp_stretch_label  = 'Good stretch'
+  elsif fp_type contains 'jersey' or fp_title contains 'jersey'
+    assign fp_label          = 'STRETCH JERSEY'
+    assign fp_opacity        = 5
+    assign fp_weight         = 3
+    assign fp_drape          = 2
+    assign fp_hold           = 4
+    assign fp_stretch        = 4
+    assign fp_opacity_label  = 'Fully opaque'
+    assign fp_weight_label   = 'Light'
+    assign fp_drape_label    = 'Moderate'
+    assign fp_hold_label     = 'Stays securely'
+    assign fp_stretch_label  = 'Stretchy'
+  elsif fp_type contains 'satin' or fp_title contains 'satin'
+    assign fp_label          = 'LUMINOUS SATIN'
+    assign fp_opacity        = 4
+    assign fp_weight         = 2
+    assign fp_drape          = 5
+    assign fp_hold           = 1
+    assign fp_stretch        = 1
+    assign fp_opacity_label  = 'Nearly opaque'
+    assign fp_weight_label   = 'Feather-light'
+    assign fp_drape_label    = 'Flowing & fluid'
+    assign fp_hold_label     = 'Needs an undercap'
+    assign fp_stretch_label  = 'Minimal stretch'
+  endif
+-%}
+
+{%- if fp_label != '' -%}
+<div class="he-fabric-profile quick-add-hidden" {{ block.shopify_attributes }}>
+  <div class="he-fabric-profile__header">
+    <span class="he-fabric-profile__title-label">FABRIC PROFILE</span>
+    <span class="he-fabric-profile__fabric-name"> — {{ fp_label }}</span>
+  </div>
+
+  <div class="he-fabric-profile__rows">
+
+    <div class="he-fabric-profile__row">
+      <span class="he-fabric-profile__attr">Opacity</span>
+      <span class="he-fabric-profile__dots" aria-label="{{ fp_opacity }} out of 5">
+        {%- for i in (1..5) -%}
+          <span class="he-fabric-profile__dot{% if i <= fp_opacity %} he-fabric-profile__dot--filled{% endif %}"></span>
+        {%- endfor -%}
+      </span>
+      <span class="he-fabric-profile__desc">{{ fp_opacity_label }}</span>
+    </div>
+
+    <div class="he-fabric-profile__row">
+      <span class="he-fabric-profile__attr">Weight</span>
+      <span class="he-fabric-profile__dots" aria-label="{{ fp_weight }} out of 5">
+        {%- for i in (1..5) -%}
+          <span class="he-fabric-profile__dot{% if i <= fp_weight %} he-fabric-profile__dot--filled{% endif %}"></span>
+        {%- endfor -%}
+      </span>
+      <span class="he-fabric-profile__desc">{{ fp_weight_label }}</span>
+    </div>
+
+    <div class="he-fabric-profile__row">
+      <span class="he-fabric-profile__attr">Drape</span>
+      <span class="he-fabric-profile__dots" aria-label="{{ fp_drape }} out of 5">
+        {%- for i in (1..5) -%}
+          <span class="he-fabric-profile__dot{% if i <= fp_drape %} he-fabric-profile__dot--filled{% endif %}"></span>
+        {%- endfor -%}
+      </span>
+      <span class="he-fabric-profile__desc">{{ fp_drape_label }}</span>
+    </div>
+
+    <div class="he-fabric-profile__row">
+      <span class="he-fabric-profile__attr">Hold</span>
+      <span class="he-fabric-profile__dots" aria-label="{{ fp_hold }} out of 5">
+        {%- for i in (1..5) -%}
+          <span class="he-fabric-profile__dot{% if i <= fp_hold %} he-fabric-profile__dot--filled{% endif %}"></span>
+        {%- endfor -%}
+      </span>
+      <span class="he-fabric-profile__desc">{{ fp_hold_label }}</span>
+    </div>
+
+    <div class="he-fabric-profile__row">
+      <span class="he-fabric-profile__attr">Stretch</span>
+      <span class="he-fabric-profile__dots" aria-label="{{ fp_stretch }} out of 5">
+        {%- for i in (1..5) -%}
+          <span class="he-fabric-profile__dot{% if i <= fp_stretch %} he-fabric-profile__dot--filled{% endif %}"></span>
+        {%- endfor -%}
+      </span>
+      <span class="he-fabric-profile__desc">{{ fp_stretch_label }}</span>
+    </div>
+
+  </div>
+</div>
+{%- endif -%}

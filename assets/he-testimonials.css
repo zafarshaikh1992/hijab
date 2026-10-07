@@ -1,0 +1,163 @@
+/* =========================================
+   Hijab Elegance — "In Their Words" Testimonials
+   ========================================= */
+
+.he-testimonials {
+  background-color: var(--he-testimonials-bg, #faf8f5);
+  padding: 80px 0;
+}
+
+/* Header */
+.he-testimonials__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.he-testimonials__eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 14px;
+  font-family: var(--font-body-family, sans-serif);
+}
+
+.he-testimonials__heading {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.he-testimonials__heading-plain {
+  font-family: 'DM Sans', var(--font-body-family, sans-serif);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.he-testimonials__heading-italic {
+  font-family: 'Cormorant Garamond', var(--font-heading-family, serif);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Grid */
+.he-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Card */
+.he-testimonials__card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Quote mark */
+.he-testimonials__quote-mark {
+  font-family: 'Cormorant Garamond', var(--font-heading-family, serif);
+  font-size: 48px;
+  line-height: 1;
+  color: #b38072;
+  opacity: 0.4;
+  margin-bottom: 8px;
+  display: block;
+  user-select: none;
+}
+
+/* Stars */
+.he-testimonials__stars {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.he-testimonials__star {
+  font-size: 14px;
+  color: #b38072;
+  line-height: 1;
+}
+
+.he-testimonials__star--empty {
+  opacity: 0.25;
+}
+
+/* Review text */
+.he-testimonials__review {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444444;
+  font-style: normal;
+  margin-top: 16px;
+  flex: 1;
+}
+
+/* Customer info */
+.he-testimonials__customer-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 24px;
+  display: block;
+}
+
+.he-testimonials__location {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 2px;
+  display: block;
+}
+
+.he-testimonials__product {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b38072;
+  margin-top: 8px;
+  display: block;
+}
+
+/* =========================================
+   Responsive — Tablet
+   ========================================= */
+@media screen and (max-width: 989px) {
+  .he-testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+  }
+}
+
+/* =========================================
+   Responsive — Mobile
+   ========================================= */
+@media screen and (max-width: 749px) {
+  .he-testimonials {
+    padding: 56px 0;
+  }
+
+  .he-testimonials__header {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .he-testimonials__grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .he-testimonials__card {
+    padding: 28px 24px;
+  }
+}

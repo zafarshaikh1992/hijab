@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shopify_breadcrumbs_dwNfjJ": {
+      "type": "shopify-breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_enabled": true,
+        "breadcrumbs_menu_definition": "main-menu",
+        "prefer_shortest_path": false,
+        "separator_shape": "triangle",
+        "font_size": 14,
+        "color_scheme": "",
+        "enable_divider": false,
+        "divider_color": "#cccccc",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_hdqFhn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ppdCcr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Exclusive Student Discount: Upto 40% Off Sitewide",
+            "heading_size": "h2"
+          }
+        },
+        "text_LAgYVj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Campus Ready. Effortlessly Modest.<br/>Look your best for every lecture, lab, and coffee run without breaking the bank.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ppdCcr",
+        "text_LAgYVj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-cda3506e-f5f5-4eb8-88f9-fb579a46192f",
+        "full_width": true,
+        "collapsible": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1766208075be1ff901": {
+      "type": "apps",
+      "blocks": {
+        "easy_student_discounts_student_discount_Bn3BP4": {
+          "type": "shopify://apps/easy-student-discounts/blocks/student-discount/d956ac7c-b7d0-4f53-8a93-9cec443e781f",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "easy_student_discounts_student_discount_Bn3BP4"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_8i3GVA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pK3EMb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Affordable Modest Fashion for Students",
+            "heading_size": "h2"
+          }
+        },
+        "text_7EmJ7Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Being a student means long hours, tight deadlines, and an even tighter budget. At Hijab Elegance, we believe you shouldn't have to compromise on quality or style just to save money. Whether you need a <strong>breathable </strong><a href=\"https://www.hijabelegance.com/collections/bamboo-jersey-hijabs\" title=\"Bamboo Jersey Hijab Collection\"><strong>Bamboo Jersey</strong></a> for all-day comfort during exams or a <a href=\"/collections/chiffon-hijabs\" title=\"Premium Chiffon Hijabs\"><strong>Premium Chiffon</strong></a> for your next presentation, we've got you covered with one of the market's highest student discounts.</p><p><em>Prefer Modal Hijabs instead? See our </em><a href=\"/collections/modal-hijabs\" title=\"Modal Hijabs\"><em>full modal hijab collection</em></a></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pK3EMb",
+        "text_7EmJ7Q"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-cda3506e-f5f5-4eb8-88f9-fb579a46192f",
+        "full_width": true,
+        "collapsible": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_inwxMK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NXUaer": {
+          "type": "column",
+          "settings": {
+            "icon": "",
+            "title": "<strong>All Day Comfort</strong>",
+            "text": "<p>Our modal and jersey fabrics are slip-resistant and breathable, perfect for rushing between classes</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AVk8Tr": {
+          "type": "column",
+          "settings": {
+            "icon": "",
+            "title": "<strong>Time-Saving Style</strong>",
+            "text": "<p>East-to-style fabrics mean you can get ready in under 5 minutes for those 8 am classes</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f63nVg": {
+          "type": "column",
+          "settings": {
+            "icon": "",
+            "title": "<strong>Budget Friendly</strong>",
+            "text": "<p>With your 40% student discount, you can build a premium wardrobe for a fraction of the price</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NXUaer",
+        "column_AVk8Tr",
+        "column_f63nVg"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "The Perfect Hijabs for University Life",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "ivory_background": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "shopify_breadcrumbs_dwNfjJ",
+    "main",
+    "rich_text_hdqFhn",
+    "1766208075be1ff901",
+    "rich_text_8i3GVA",
+    "multicolumn_inwxMK"
+  ]
+}

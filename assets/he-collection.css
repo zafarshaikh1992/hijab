@@ -1,0 +1,136 @@
+/*
+ * he-collection.css
+ * Hijab Elegance — Collection page visual overrides
+ * Covers: banner typography, product type label, borderless cards, Quick Add styling
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+
+/* ── A. Collection banner ── */
+
+.collection-hero__eyebrow {
+  display: block;
+  font-family: var(--font-heading-family);
+  font-size: 1.0rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b38072;
+  margin-bottom: 1.2rem;
+}
+
+.collection-hero__title {
+  font-family: var(--font-accent-family) !important;
+  font-weight: 300 !important;
+  font-style: italic !important;
+  font-size: clamp(40px, 6vw, 72px) !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.05 !important;
+  margin: 0.4rem 0 !important;
+}
+
+.collection-hero__title + .collection-hero__description {
+  font-family: var(--font-body-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.55);
+  line-height: 1.7;
+  max-width: 52rem;
+  margin-top: 1.2rem !important;
+}
+
+/* ── B. Product type label (above product name) ── */
+
+.card__product-type {
+  font-family: var(--font-heading-family);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b38072;
+  margin: 0 0 0.5rem;
+  line-height: 1;
+}
+
+/* ── C. Borderless, shadowless cards ── */
+
+.collection .card--standard .card__inner,
+.collection .card--card {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.collection .card--card:after,
+.collection .card--standard .card__inner:after {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Subtle image hover lift instead of card border */
+.collection .card__media {
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.collection .card-wrapper:hover .card__media img {
+  transform: scale(1.03);
+}
+
+/* Clean card heading weight */
+.collection .card__heading.h5 {
+  font-family: var(--font-heading-family);
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+}
+
+/* Color swatch name — muted */
+.collection .card__color-name {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Price — consistent weight */
+.collection .price__regular .price-item {
+  font-family: var(--font-body-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ── D. Quick Add button — brand styled ── */
+
+.collection .quick-add .quick-add__submit {
+  background-color: rgba(26, 26, 26, 0.88) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: var(--font-heading-family) !important;
+  font-size: 1.0rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  padding: 1.3rem !important;
+  transition: background-color 0.2s ease !important;
+  backdrop-filter: blur(4px);
+}
+
+.collection .quick-add .quick-add__submit:hover,
+.collection .quick-add .quick-add__submit:focus {
+  background-color: #b38072 !important;
+  color: #fff !important;
+}
+
+/* Spinner inside quick add keeps white */
+.collection .quick-add .loading__spinner {
+  color: #fff;
+}
+
+/* ── E. Subtle compare-at price — premium feel, not discount-bin ── */
+/* The <s> element is the struck-through original price on sale cards */
+.card-wrapper s.price-item--regular,
+.card-wrapper .price-item.price-item--regular:is(s) {
+  font-size: 0.8em;
+  opacity: 0.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
