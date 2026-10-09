@@ -17,12 +17,16 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
+    {%- if template.name == 'product' and product.handle == 'luxury-satin-silk-hijab' -%}
+    <title>Satin Silk Hijab, Radiant Elegance | Hijab Elegance</title>
+    {%- else -%}
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
+    {%- endif -%}
 
     {%- liquid
       assign meta_desc = page_description
